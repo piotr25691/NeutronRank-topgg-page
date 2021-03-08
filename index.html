@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeutronRank - top.gg</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+        
+        @keyframes float-text {
+            from {opacity: 0; transform: translateY(-15px);}
+            to  {opacity: 1; transform: translateY(0px);}
+        }
+        @keyframes float-banner {
+            from {opacity: 0; transform: translateY(35px);}
+            to  {opacity: 1; transform: translateY(50px);}
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        code {
+            background-color: rgba(0,0,0,.5);
+            color: rgba(255,255,255,.5);
+            padding: 2px;
+            border-radius: 5px;
+        }
+        #container {
+            width: 1000px;
+        }
+        .bg {
+            position: fixed;
+            opacity: .8;
+            filter: brightness(.5);
+            width: 100%;
+            height: 100%;
+            background: url('https://images.hdqwalls.com/download/lava-abstract-formation-8k-oc-5120x2880.jpg') center/cover no-repeat fixed;  
+            z-index: -1;
+            margin-top: 0;
+        }
+        .presents {
+            color: rgba(255,255,255,.5);
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            height: 20px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            animation: float-text 2s;
+            animation-fill-mode: forwards;
+        }
+        .bot-container {
+            color: rgba(255,255,255,.5);
+            opacity: 0;
+            width: 898px;
+            height: 200px;
+            margin: 0 auto;
+            background: rgba(255,255,255,.05);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px; 
+            border-radius: 20px;
+            transform: translateY(50px);
+            animation: float-banner 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            overflow: hidden;
+        }
+        .bot-container .logo {
+            width: 200px;
+            height: 200px;
+            background: url('https://cdn.discordapp.com/avatars/800000045244088341/78e65cf357e2135f28e4c195fdf2d85b.jpg?size=2048') center/cover no-repeat;
+            clip-path: circle(100px);
+            position: absolute;
+        }
+        .bot-container .name {
+            color: rgba(255,255,255,.7);
+            position: absolute;
+            width: 100%;
+            text-align: right;
+            right: 15px;
+            font-size: 56px;
+            font-family: 'Raleway', sans-serif;
+        }
+        .bot-container .slogan {
+            color: rgba(255,255,255,.5);
+            position: absolute;
+            letter-spacing: 2.3px;
+            bottom: 15px;
+            width: 100%;
+            max-width: inherit;
+            text-align: right;
+            right: 11px;
+            font-size: 24px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+        }
+        .info-container {
+            color: rgba(255,255,255,.5);
+            opacity: 0;
+            padding: 5px;
+            margin: 0 auto;
+            margin-top: 10px;
+            background: rgba(255,255,255,.05);
+            transform: translateY(50px);
+            border-radius: 20px;
+            animation: float-banner 2s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300 !important;
+            font-size: 20px;
+        }
+        .info-container img {
+            min-width: 670px;
+            max-width: 670px;
+        }
+        .beta-container {
+            color: rgba(255,255,255,.5);
+            opacity: 0;
+            background-color: rgba(255,255,255,.05);
+            padding: 5px;
+            margin: 0 auto;
+            margin-top: 10px;
+            transform: translateY(50px);
+            border-radius: 20px;
+            animation: float-banner 2s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300 !important;
+            font-size: 20px;
+        }
+        .beta {
+          color: rgba(255,255,255,.5);
+          width: 600px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          flex-direction: row-reverse;
+        }
+        .footer-container {
+            color: rgba(255,255,255,.5);
+            opacity: 0;
+            background-color: rgba(255,255,255,.05);
+            padding: 5px;
+            margin: 0 auto;
+            margin-top: 10px;
+            transform: translateY(50px);
+            border-radius: 20px;
+            animation: float-banner 2s;
+            animation-delay: 5s;
+            animation-fill-mode: forwards;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300 !important;
+            font-size: 20px;
+        }
+        .pad {
+            margin-top: 40px;
+            width: 100%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bot-container">
+        <div class="logo"></div>
+        <div class="name"><h1>NeutronRank</h1></div>   
+        <div class="slogan"><p>The best you have ever seen from leveling systems!</p></div>
+    </div>
+    <div class="presents"><h3>Lunah presents to you:</h3></div>
+    <div class="info-container" id="container">
+        <h3>What is it?</h3>
+        <p>NeutronRank is a bot that makes the leveling in your Discord so much better!</p>
+        <p>The bot is very sleek and functional, and has plenty of room for future updates.</p>
+        <p>It features:</p>
+        <ul style="list-style: none;">
+            <li>⸻ Detailed rank statistics that other bots might not have ⸻</li>
+            <img src="https://i.imgur.com/brrtSyw.png" style="border-radius: 10px;"></img>
+            <li>⸻ A way to get 250 levels ⸻</li>
+            <img src="https://i.imgur.com/7MIjXOT.png" style="border-radius: 10px;"></img>
+            <li>⸻ A fast and reliable user experience using a database ⸻</li>
+            <img src="https://i.imgur.com/0KnqbSc.png" style="border-radius: 10px;"></img>
+        </ul>
+    </div>
+    <div class="beta-container" id="container">
+        <div class="beta">
+            <h3>We feature a beta version as well.</h3>
+            <img src="https://i.imgur.com/EHIUfwy.png" style="border-radius: 10px; margin-right: 10px;"></img>
+        </div>
+        <p>It has additional testing features that are not rolled out to the main bot.</p>
+        <p>You can use it to get extra features, but bear in mind these features might not work as intended.</p>
+        <p>It is advised you use the beta version only if you can accept bugs.</p>
+        <p>You can invite it from the bot. Just run <code>n!invite</code> and you'll find the link to invite.</p>
+    </div>
+    <div class="footer-container" id="container">
+        <p>If you want to have a better leveling system in your server, this is the bot you should go with. Try it!</p>
+        <p style="font-size: 16px;">This bot is &copy; Lunah 2021. No unauthorized copying is allowed.</p>
+    </div>
+    <div class="pad"></div>
+</body>
+</html>
