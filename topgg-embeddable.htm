@@ -1,3 +1,5 @@
+<!-- > This page is best viewed using a desktop device. It might not look as good on a mobile device. !-->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,34 +7,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeutronRank - top.gg</title>
 	<style>
+     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+     * {
+        font-family: 'Raleway', sans-serif;
+        }
      html {
         overflow-y: auto;
         background-color: transparent;
-       }
+        }
      body {
         overflow-y: scroll;
         overflow-x: hidden;
-       }
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.imgur.com/mBalOM1.jpg') center/cover no-repeat;
+        opacity: .8;
+        }
      ::-webkit-scrollbar {
         width: 10px;
         height: 10px;
         display: none; 
-       }
+        }
      ::-webkit-scrollbar-button:start:decrement,
      ::-webkit-scrollbar-button:end:increment  {
         height: 30px;
         background-color: transparent;
-      }
+        }
      ::-webkit-scrollbar-track-piece  {
         background-color: #3b3b3b;
         -webkit-border-radius: 16px;
-      }
+        }
      ::-webkit-scrollbar-thumb:vertical {
         height: 50px;
         background-color: #666;
         border: 1px solid #eee;
         -webkit-border-radius: 6px;
+        }
+      .entity-table {
+      	filter: invert(1);
+        }
+      .entity-table code {
+	 	filter: invert(1);
+        }
+      .entity-owner, .entity-button {
+		filter: invert(1) !important;
+        color: #fff !important;
+        border-radius: 5px;
+        transition: 300ms all;
+        }
+      .entity-button--danger:hover {
+		background-color: #55ffff;
+        color: #000 !important;
+        transition: 300ms all;
       }
+      .entity-owner img {
+	    filter: invert(1);
+        }
+      .entity-table {
+        display: flex;
+        }
+      .entity-table__cell:nth-child(odd) {
+		width: 240px;
+        }
+      .entity-table__cell {
+	    border-radius: 5px;
+        }
+      .entity-header__image {
+      	border-radius: 50%
+      }
+	  .gWEJzY {
+		border-radius: 20px;
+      }
+      .site-nav {
+		background-color: transparent !important;
+      }
+	  [data-theme=dark] #show-menu:checked~.menu {
+      	display: none;
+      }
+      .mobile-logo {
+      	margin: 0 auto;
+      }
+      .site-nav #menu-trigger {
+      	display: none !important;
+	  }
+      .hoverable:hover {
+        background: #505555;
+	  }
     </style>
 </head>
 <body>
