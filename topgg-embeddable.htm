@@ -99,6 +99,24 @@
   	opacity: .6;
   	filter: brightness(.5);
 	  }
+      @media only screen and (max-width: 840px) {
+      .entity-content__description:before {
+  	content: 'This page is best viewed using a desktop device.\a It might not look as good on a mobile device.';
+  	position: relative;
+        display: block;
+  	top: -10px;
+  	width: 100%;
+  	height: 50px;
+  	background: rgba(255,255,255,.05);
+  	border-radius: 10px;
+  	line-height: 25px;
+  	text-align: center;
+  	font-size: 11px;
+  	color: rgba(255,255,255,.5);
+  	overflow: hidden;
+        white-space: pre;
+	  }
+      }	
     </style>
 </head>
 <body>
