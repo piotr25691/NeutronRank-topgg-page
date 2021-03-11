@@ -37,56 +37,59 @@
         border: 1px solid #eee;
         -webkit-border-radius: 6px;
         }
-      .entity-table {
+     .entity-table {
       	filter: invert(1);
         }
-      .entity-table code {
-	filter: invert(1);
+     .entity-table code {
+	 filter: invert(1);
         }
-      .entity-owner, .entity-button {
+     .entity-owner, .entity-button {
 	filter: invert(1) !important;
-        color: #fff !important;
+        color: #fff !important; 
         border-radius: 5px;
         transition: 300ms all;
         }
-      .entity-button--danger:hover {
+     .entity-header__button--disabled {
+        filter: invert(1) brightness(.7) !important;
+        }
+     .entity-button--danger:hover {
 	background-color: #55ffff;
         color: #000 !important;
         transition: 300ms all;
         }
-      .entity-owner img {
-	    filter: invert(1);
+     .entity-owner img {
+	filter: invert(1);
         }
-      .entity-table {
+     .entity-table {
         display: flex;
         }
-      .entity-table__cell:nth-child(odd) {
-		width: 240px;
+     .entity-table__cell:nth-child(odd) {
+	width: 240px;
         }
-      .entity-table__cell {
-	    border-radius: 5px;
+     .entity-table__cell {
+	border-radius: 5px;
         }
-      .entity-header__image {
+     .entity-header__image {
       	border-radius: 50%
-       }
-      .gWEJzY {
+        }
+     .gWEJzY {
 	border-radius: 20px;
-       }
-      .site-nav {
-	background-color: transparent !important;
-       }
-      [data-theme=dark] #show-menu:checked~.menu {
+        }
+     [data-theme=dark] #show-menu:checked~.menu {
       	display: none;
-       }
+      }
       .mobile-logo {
       	margin: 0 auto;
-       }
+      }
+      .site-nav {
+	background: transparent;
+      }
       .site-nav #menu-trigger {
       	display: none !important;
-       }
+      }
       .hoverable:hover {
         background: #505555;
-       }
+      }
       .ePJhbt:before {
   	content: '';
   	position: fixed;
@@ -96,8 +99,14 @@
   	z-index: -1;
   	opacity: .6;
   	filter: brightness(.5);
+      }
+      @media only screen and (max-device-width: 840px) {
+       .site-nav {
+	 background-color: transparent;
        }
-      @media only screen and (max-width: 840px) {
+      .clbSHG {
+	 margin-top: 180px;
+       }
       .entity-content__description:before {
   	content: 'This page is best viewed using a desktop device.\a It might not look as good on a mobile device.';
   	position: relative;
@@ -114,10 +123,10 @@
   	overflow: hidden;
         white-space: pre;
        }
-      }	
+     }
     </style>
 </head>
 <body>
-<iframe id="embed" src="https://piotr25691.github.io/NeutronRank-topgg-page/" style="overflow: hidden;"></iframe>
+<iframe id="embed" src="https://piotr25691.github.io/NeutronRank-topgg-page/" style="overflow: hidden; height: 695px;"></iframe>
 </body>
 </html>
