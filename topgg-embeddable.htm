@@ -6,124 +6,101 @@
     <title>NeutronRank - top.gg</title>
 	<style>
      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-     * {
+       * {
         font-family: 'Raleway', sans-serif;
         }
-     html {
+       html {
         overflow-y: auto;
         background-color: transparent;
         }
-     body {
+       body {
         overflow-y: scroll;
         overflow-x: hidden;
         }
-     ::-webkit-scrollbar {
+       ::-webkit-scrollbar {
         width: 10px;
         height: 10px;
         display: none; 
         }
-     ::-webkit-scrollbar-button:start:decrement,
-     ::-webkit-scrollbar-button:end:increment  {
+       ::-webkit-scrollbar-button:start:decrement,
+       ::-webkit-scrollbar-button:end:increment  {
         height: 30px;
         background-color: transparent;
         }
-     ::-webkit-scrollbar-track-piece  {
+       ::-webkit-scrollbar-track-piece  {
         background-color: #3b3b3b;
         -webkit-border-radius: 16px;
         }
-     ::-webkit-scrollbar-thumb:vertical {
+       ::-webkit-scrollbar-thumb:vertical {
         height: 50px;
         background-color: #666;
         border: 1px solid #eee;
         -webkit-border-radius: 6px;
         }
-     .entity-table {
-      	filter: invert(1);
+       .entity-header__image {
+         border-radius: 20px;
         }
-     .entity-table code {
-	 filter: invert(1);
-        }
-     .entity-owner, .entity-button {
-	filter: invert(1) !important;
-        color: #fff !important; 
-        border-radius: 5px;
-        transition: 300ms all;
-        }
-     .entity-header__button--disabled {
-        filter: invert(1) brightness(.7) !important;
-        }
-     .entity-button--danger:hover {
-	background-color: #55ffff;
-        color: #000 !important;
-        transition: 300ms all;
-        }
-     .entity-owner img {
-	filter: invert(1);
-        }
-     .entity-table {
-        display: flex;
-        }
-     .entity-table__cell:nth-child(odd) {
-	width: 240px;
-        }
-     .entity-table__cell {
-	border-radius: 5px;
-        }
-     .entity-header__image {
-      	border-radius: 50%
-        }
-     .gWEJzY {
-	border-radius: 20px;
-        }
-     [data-theme=dark] #show-menu:checked~.menu {
-      	display: none;
-      }
-      .mobile-logo {
-      	margin: 0 auto;
-      }
+       @media only screen and (max-width: 840px) {
+         .mobile-logo {
+         margin: 0 auto;
+         }
+         #menu-trigger {
+           opacity: 0;
+         }
+       }
+       div[data-theme="dark"]:before, div[data-theme="light"]:before {
+         content: '';
+         width: 100%; height: 100%;
+         background: #5865f2;
+         position: fixed;
+       }
       .site-nav {
-	background: transparent;
+         background: linear-gradient(#2c2f33, transparent);
+         position: absolute;
       }
-      .site-nav #menu-trigger {
-      	display: none !important;
+      .entity-header__actions a, .entity-header__actions a > span, .entity-sidebar > div > div > a, .entity-sidebar > div > section > a > div, .entity-sidebar > div > div > div, .entity-announcement, .entity-announcement > div
+      {
+         background: #2C2F33 !important;
+         border-radius: 5px;
       }
-      .hoverable:hover {
-        background: #505555;
+      .entity-table__cell:nth-child(odd) {
+         width: 165px;
       }
-      .ePJhbt:before {
-  	content: '';
-  	position: fixed;
-  	width: 100%;
-  	height: 100%;
-  	background: url('https://i.imgur.com/mBalOM1.jpg') center/cover no-repeat fixed;
-  	z-index: -1;
-  	opacity: .6;
-  	filter: brightness(.5);
+      .entity-table__cell:nth-child(2) {
+         margin-left: 10px;
       }
-      @media only screen and (max-device-width: 840px) {
-       .site-nav {
-	 background-color: transparent;
+      #reviews {
+         background: #2C2F33;
+         padding: 20px;
+         border-radius: 5px;
+      }
+      footer.container {
+         max-width: 100% !important;
+         background: transparent;
+      }
+      .fQqdaP {
+         padding: 65px 0px 0px;
+      }
+      #embed {
+         border-radius: 5px;
+      }
+      footer .footer-navigation {
+         transform: translateY(40px);
+      }
+      .entity-sidebar__report:after {
+         content: "Don't report me! 😭";
+         opacity: 0;
+      }
+      .entity-sidebar__report:hover:after {
+         font-size: 14px;
+         opacity: 1;
+      }
+      .entity-sidebar__report:hover {
+         font-size: 0;
+      }
+      .entity-tags > a:not(:first-child) {
+         margin-left: 5px;
        }
-      .clbSHG {
-	 margin-top: 180px;
-       }
-      .entity-content__description:before {
-  	content: 'This page is best viewed using a desktop device.\a It might not look as good on a mobile device.';
-  	position: relative;
-        display: block;
-  	top: -10px;
-  	width: 100%;
-  	height: 50px;
-  	background: rgba(255,255,255,.05);
-  	border-radius: 10px;
-  	line-height: 25px;
-  	text-align: center;
-  	font-size: 11px;
-  	color: rgba(255,255,255,.5);
-  	overflow: hidden;
-        white-space: pre;
-       }
-     }
     </style>
 </head>
 <body>
